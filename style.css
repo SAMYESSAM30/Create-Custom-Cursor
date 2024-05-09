@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #1b1b1f;
+  cursor: none;
+}
+.cursor-text {
+  color: white;
+  text-align: center;
+  margin-top: 40vh;
+  font-size: 85px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  line-height: 85px;
+  font-weight: 700;
+
+  text-shadow: 2px 2px hsla(0, 0%, 100%, 0.5);
+}
+.cursor-dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+}
+.cursor-outline {
+  width: 50px;
+  height: 50px;
+  border: 1px solid hsla(0, 0%, 100%, 0.5);
+}
+
+.cursor-dot,
+.cursor-outline {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 1;
+  pointer-events: none;
+}
